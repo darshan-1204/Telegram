@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.telegram.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -44,5 +45,8 @@ class MainActivity : AppCompatActivity() {
 
             false
         }
+
+        binding.recycle.layoutManager = LinearLayoutManager(this)
+        binding.recycle.adapter = RecycleAdapter()
     }
 }

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/recycle_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/recycle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telegram"
+            android:layout_marginStart="5dp"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/recycle_img"/>
+
+        <TextView
+            android:id="@+id/recycle_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycle_name"
+            android:layout_toRightOf="@id/recycle_img"
+            android:text="Message"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/recycle_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:text="5:07 PM"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
